@@ -9,14 +9,15 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Sass
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+*************************************************
+Halt! Do not make any style changes in this file.
+*************************************************
 */
 body {
-  color: black;
+  background: white;
 }
 body h1 {
-  color: blue;
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  transition: 3s;
+  color: black;
 }

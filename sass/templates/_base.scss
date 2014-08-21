@@ -1,8 +1,7 @@
 body {
-	color: black;
+	background: white;
 
 	h1 {
-		color: blue;
-		@include transition(3s);
+		color: black;
 	}
 }
