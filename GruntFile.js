@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 	 	
 	 	pkg: grunt.file.readJSON('package.json'),
 	 	project: {
-	 		css: [
+	 		sass: [
 	 			'sass/stylesheet.scss'
 	 		]
 	 	},
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 	 				sourcemap: 'none'
 	 			},
 	 			files: {
-	 				'style.css' : '<%= project.css %>'
+	 				'style.css' : '<%= project.sass %>'
 	 			}
 	 		},
 	 		dist: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 	 				sourcemap: 'none'
 	 			},
 	 			files: {
-	 				'style.css' : '<%= project.css %>'
+	 				'style.css' : '<%= project.sass %>'
 	 			}
 	 		}
 	 	},
@@ -70,12 +70,9 @@ module.exports = function(grunt) {
 
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-	 /**
-	  * Default task
-	  * Run `grunt` on the command line
-	  */
-	 grunt.registerTask('default', [
-	   'sass:dev',
-	   'watch'
-	 ]);
+	/**
+	 * Default task
+	 * Run `grunt` on the command line
+	 */
+	grunt.registerTask('default', ['sass:dev', 'watch']);
 };

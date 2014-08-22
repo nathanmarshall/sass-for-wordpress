@@ -11,9 +11,9 @@ Tags: Sass
 This theme, like WordPress, is licensed under the GPL.
 */
 /*
-*************************************************
-Halt! Do not make any style changes in this file.
-*************************************************
+****************************************************************************************************
+Halt! Do not make any style changes in this file - Changes made here will be overwritten on compile. 
+****************************************************************************************************
 */
 body {
   background: white;
